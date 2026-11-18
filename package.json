@@ -11,6 +11,6 @@
     "crashcat": "0.0.3"
   },
   "devDependencies": {
-    "@wonderlandengine/mcp-plugin": "file:../wonderland-editor-mcp"
+    "@wonderlandengine/mcp-plugin": "^1.2.1"
   }
 }

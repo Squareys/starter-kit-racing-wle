@@ -6,6 +6,8 @@ by mrdoob (three.js), itself based on
 [Kenney's Starter Kit Racing](https://github.com/KenneyNL/Starter-Kit-Racing) for Godot,
 to [Wonderland Engine](https://wonderlandengine.com) 1.6.
 
+Play it: https://starter-kit-racing-wle-145969.cloud.wonderland.dev
+
 See [PORTING.md](PORTING.md) for how the original maps onto Wonderland Engine.
 
 ## Controls
