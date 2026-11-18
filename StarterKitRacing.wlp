@@ -1,0 +1,1709 @@
+{
+    "settings": {
+        "project": {
+            "name": "starter-kit-racing",
+            "version": [
+                1,
+                6,
+                1
+            ],
+            "description": "Arcade racing on a tile-based track with a track editor, built with Wonderland Engine."
+        },
+        "scripting": {
+            "components": {
+                "output": "Project-bundle.js"
+            },
+            "application": {
+                "output": "Project-app.js"
+            }
+        },
+        "editor": {
+            "serverPort": 8082,
+            "importPhysicalAsPhongMaterials": false
+        },
+        "xr": {
+            "vr": {
+                "enable": false
+            }
+        },
+        "rendering": {
+            "sky": {
+                "enabled": true,
+                "material": "15"
+            },
+            "environment": {
+                "enabled": true,
+                "bakingMode": "sky",
+                "material": "15"
+            },
+            "hdr": {
+                "tonemapping": "aces"
+            },
+            "bloom": {
+                "enabled": true,
+                "threshold": 1.5,
+                "intensity": 0.6
+            },
+            "ssao": {
+                "enabled": true,
+                "radius": 0.6,
+                "intensity": 1.0
+            }
+        }
+    },
+    "files": {
+        "1": {
+            "fileName": "models/vehicle-truck-yellow.glb",
+            "importerName": ""
+        },
+        "2": {
+            "fileName": "models/vehicle-truck-green.glb",
+            "importerName": ""
+        },
+        "3": {
+            "fileName": "models/vehicle-truck-purple.glb",
+            "importerName": ""
+        },
+        "4": {
+            "fileName": "models/vehicle-truck-red.glb",
+            "importerName": ""
+        },
+        "5": {
+            "fileName": "models/track-straight.glb",
+            "importerName": ""
+        },
+        "6": {
+            "fileName": "models/track-corner.glb",
+            "importerName": ""
+        },
+        "7": {
+            "fileName": "models/track-bump.glb",
+            "importerName": ""
+        },
+        "8": {
+            "fileName": "models/track-finish.glb",
+            "importerName": ""
+        },
+        "9": {
+            "fileName": "models/decoration-empty.glb",
+            "importerName": ""
+        },
+        "10": {
+            "fileName": "models/decoration-forest.glb",
+            "importerName": ""
+        },
+        "11": {
+            "fileName": "models/decoration-tents.glb",
+            "importerName": ""
+        },
+        "12": {
+            "fileName": "sprites/smoke.png",
+            "importerName": ""
+        }
+    },
+    "meshes": {
+        "p0": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "p1": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "p2": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "p3": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "p4": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "p5": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "1": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "19": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "20": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "21": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "22": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "23": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "24": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "25": {
+            "link": {
+                "name": "track-straight",
+                "file": "models\\track-straight.glb"
+            }
+        },
+        "26": {
+            "link": {
+                "name": "track-corner",
+                "file": "models\\track-corner.glb"
+            }
+        },
+        "27": {
+            "link": {
+                "name": "track-bump",
+                "file": "models\\track-bump.glb"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "track-finish",
+                "file": "models\\track-finish.glb"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "decoration-empty",
+                "file": "models\\decoration-empty.glb"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "decoration-forest",
+                "file": "models\\decoration-forest.glb"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "decoration-tents",
+                "file": "models\\decoration-tents.glb"
+            }
+        }
+    },
+    "images": {
+        "1": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-straight.glb"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-corner.glb"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-bump.glb"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-finish.glb"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-empty.glb"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-forest.glb"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-tents.glb"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "smoke.png",
+                "file": "sprites\\smoke.png"
+            }
+        }
+    },
+    "textures": {
+        "1": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-yellow.glb"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-straight.glb"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-corner.glb"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-bump.glb"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-finish.glb"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-empty.glb"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-forest.glb"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-tents.glb"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "smoke.png",
+                "file": "sprites\\smoke.png"
+            }
+        }
+    },
+    "fonts": {
+        "1": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "audioClips": {},
+    "shaderChunks": {
+        "1": {
+            "link": {
+                "name": "lib\\Color.glsl",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "lib\\Compatibility.glsl",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "lib\\CoordinateSystems.glsl",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "lib\\GI.glsl",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "lib\\Inputs.glsl",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "lib\\Lights.glsl",
+                "file": "default"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "lib\\Materials.glsl",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "lib\\Math.glsl",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "lib\\MorphTargets.glsl",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "lib\\Packing.glsl",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "lib\\PhysicalBSDF.glsl",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "lib\\Quaternion.glsl",
+                "file": "default"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "lib\\SkyProcedural.glsl",
+                "file": "default"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "lib\\Slug.frag.glsl",
+                "file": "default"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "lib\\Slug.vert.glsl",
+                "file": "default"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "lib\\Surface.glsl",
+                "file": "default"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "lib\\Textures.glsl",
+                "file": "default"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "lib\\Uniforms.glsl",
+                "file": "default"
+            }
+        },
+        "19": {
+            "link": {
+                "name": "lib\\VertexAttributes.glsl",
+                "file": "default"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "AtmosphericSky.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Color.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        }
+    },
+    "pipelines": {
+        "1": {
+            "link": {
+                "name": "Color",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "VertexColor",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            },
+            "features": {
+                "TONEMAPPING": true,
+                "GLOBAL_ILLUMINATION": true,
+                "SSAO": true,
+                "SHADOW_PCF": true
+            }
+        },
+        "13": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "TONEMAPPING": true,
+                "GLOBAL_ILLUMINATION": true,
+                "SSAO": true,
+                "SHADOW_PCF": true
+            }
+        },
+        "14": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "TileFeedback",
+                "file": "default"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "19": {
+            "link": {
+                "name": "AtmosphericSky",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "Flat Transparent Vertex Color Textured",
+            "shader": "7",
+            "features": {
+                "TEXTURED": true,
+                "VERTEX_COLORS": true,
+                "TONEMAPPING": true
+            },
+            "blending": true,
+            "depthWrite": false,
+            "castShadows": false,
+            "doubleSided": true,
+            "blendSrcRgb": "source alpha",
+            "blendSrcAlpha": "one",
+            "blendDestRgb": "one minus source alpha",
+            "blendDestAlpha": "one minus source alpha"
+        },
+        "21": {
+            "name": "Flat Transparent Vertex Color",
+            "shader": "7",
+            "features": {
+                "TEXTURED": false,
+                "VERTEX_COLORS": true,
+                "TONEMAPPING": true
+            },
+            "blending": true,
+            "depthWrite": false,
+            "castShadows": false,
+            "doubleSided": true,
+            "blendSrcRgb": "source alpha",
+            "blendSrcAlpha": "one",
+            "blendDestRgb": "one minus source alpha",
+            "blendDestAlpha": "one minus source alpha"
+        },
+        "22": {
+            "name": "Flat Transparent Textured",
+            "shader": "7",
+            "features": {
+                "TEXTURED": true,
+                "VERTEX_COLORS": false,
+                "TONEMAPPING": true
+            },
+            "blending": true,
+            "depthWrite": false,
+            "castShadows": false,
+            "blendSrcRgb": "source alpha",
+            "blendSrcAlpha": "one",
+            "blendDestRgb": "one minus source alpha",
+            "blendDestAlpha": "one minus source alpha"
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "1": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "name": "Kenney Vehicle",
+            "Physical": {
+                "roughnessFactor": 0.3499999
+            }
+        },
+        "2": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-green.glb"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-purple.glb"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\vehicle-truck-red.glb"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-straight.glb"
+            },
+            "name": "Kenney Track",
+            "Physical": {
+                "roughnessFactor": 0.85
+            }
+        },
+        "6": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-corner.glb"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-bump.glb"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\track-finish.glb"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-empty.glb"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-forest.glb"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "colormap",
+                "file": "models\\decoration-tents.glb"
+            }
+        },
+        "12": {
+            "name": "Smoke",
+            "pipeline": "20",
+            "Flat": {
+                "color": [
+                    0.37,
+                    0.3729999,
+                    0.4199999,
+                    1.0
+                ],
+                "flatTexture": "12"
+            }
+        },
+        "13": {
+            "name": "Skid Marks",
+            "pipeline": "21",
+            "Flat": {
+                "color": [
+                    0.067,
+                    0.067,
+                    0.067,
+                    0.5
+                ]
+            }
+        },
+        "14": {
+            "name": "Ghost",
+            "pipeline": "22",
+            "Flat": {
+                "color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.4
+                ],
+                "flatTexture": "5"
+            }
+        },
+        "15": {
+            "name": "Sky",
+            "pipeline": "19",
+            "AtmosphericSky": {
+                "direction": [
+                    0.7853,
+                    0.5,
+                    -0.3650999
+                ],
+                "exposure": 0.5
+            }
+        },
+        "16": {
+            "name": "Ground",
+            "pipeline": "12",
+            "Physical": {
+                "albedoColor": [
+                    0.1599999,
+                    0.4199999,
+                    0.2199999,
+                    1.0
+                ],
+                "roughnessFactor": 0.9499999,
+                "metallicFactor": 0.0
+            }
+        },
+        "17": {
+            "name": "Editor Grid",
+            "pipeline": "21",
+            "Flat": {
+                "color": [
+                    0.102,
+                    0.29,
+                    0.212,
+                    0.35
+                ]
+            }
+        }
+    },
+    "objects": {
+        "1": {
+            "name": "Model",
+            "parent": "44",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.5
+            ]
+        },
+        "2": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "parent": "1",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "3": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "parent": "1",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "4": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "parent": "1",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "5": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "parent": "1",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "6": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "parent": "1",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "7": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-yellow.glb"
+            },
+            "parent": "1",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "8": {
+            "name": "vehicle-truck-green.glb",
+            "parent": "43"
+        },
+        "9": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-green.glb"
+            },
+            "parent": "8",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "10": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-green.glb"
+            },
+            "parent": "8",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "11": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-green.glb"
+            },
+            "parent": "8",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "12": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-green.glb"
+            },
+            "parent": "8",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "13": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-green.glb"
+            },
+            "parent": "8",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "14": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-green.glb"
+            },
+            "parent": "8",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "15": {
+            "name": "vehicle-truck-purple.glb",
+            "parent": "43"
+        },
+        "16": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-purple.glb"
+            },
+            "parent": "15",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "17": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-purple.glb"
+            },
+            "parent": "15",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "18": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-purple.glb"
+            },
+            "parent": "15",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-purple.glb"
+            },
+            "parent": "15",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "20": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-purple.glb"
+            },
+            "parent": "15",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-purple.glb"
+            },
+            "parent": "15",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "22": {
+            "name": "vehicle-truck-red.glb",
+            "parent": "43"
+        },
+        "23": {
+            "link": {
+                "name": "underside",
+                "file": "models\\vehicle-truck-red.glb"
+            },
+            "parent": "22",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "24": {
+            "link": {
+                "name": "wheel-back-left",
+                "file": "models\\vehicle-truck-red.glb"
+            },
+            "parent": "22",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "25": {
+            "link": {
+                "name": "wheel-back-right",
+                "file": "models\\vehicle-truck-red.glb"
+            },
+            "parent": "22",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "26": {
+            "link": {
+                "name": "wheel-front-left",
+                "file": "models\\vehicle-truck-red.glb"
+            },
+            "parent": "22",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "27": {
+            "link": {
+                "name": "wheel-front-right",
+                "file": "models\\vehicle-truck-red.glb"
+            },
+            "parent": "22",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "28": {
+            "link": {
+                "name": "body",
+                "file": "models\\vehicle-truck-red.glb"
+            },
+            "parent": "22",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "1"
+                    }
+                }
+            ]
+        },
+        "29": {
+            "name": "track-straight.glb",
+            "parent": "43"
+        },
+        "30": {
+            "link": {
+                "name": "track-straight",
+                "file": "models\\track-straight.glb"
+            },
+            "parent": "29",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "31": {
+            "name": "track-corner.glb",
+            "parent": "43"
+        },
+        "32": {
+            "link": {
+                "name": "track-corner",
+                "file": "models\\track-corner.glb"
+            },
+            "parent": "31",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "33": {
+            "name": "track-bump.glb",
+            "parent": "43"
+        },
+        "34": {
+            "link": {
+                "name": "track-bump",
+                "file": "models\\track-bump.glb"
+            },
+            "parent": "33",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "35": {
+            "name": "track-finish.glb",
+            "parent": "43"
+        },
+        "36": {
+            "link": {
+                "name": "track-finish",
+                "file": "models\\track-finish.glb"
+            },
+            "parent": "35",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "37": {
+            "name": "decoration-empty.glb",
+            "parent": "43"
+        },
+        "38": {
+            "link": {
+                "name": "decoration-empty",
+                "file": "models\\decoration-empty.glb"
+            },
+            "parent": "37",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "39": {
+            "name": "decoration-forest.glb",
+            "parent": "43"
+        },
+        "40": {
+            "link": {
+                "name": "decoration-forest",
+                "file": "models\\decoration-forest.glb"
+            },
+            "parent": "39",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "41": {
+            "name": "decoration-tents.glb",
+            "parent": "43"
+        },
+        "42": {
+            "link": {
+                "name": "decoration-tents",
+                "file": "models\\decoration-tents.glb"
+            },
+            "parent": "41",
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "mesh": {
+                        "material": "5"
+                    }
+                }
+            ]
+        },
+        "43": {
+            "name": "Templates",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "44": {
+            "name": "Vehicle",
+            "translation": [
+                3.5,
+                0.0,
+                5.0
+            ]
+        },
+        "45": {
+            "name": "Track",
+            "translation": [
+                0.0,
+                -0.5,
+                0.0
+            ],
+            "scaling": [
+                0.75,
+                0.75,
+                0.75
+            ]
+        },
+        "46": {
+            "name": "Game",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "components": [
+                {
+                    "type": "game",
+                    "game": {
+                        "camera": "47",
+                        "ghostMaterial": "14",
+                        "gridMaterial": "17",
+                        "skidMaterial": "13",
+                        "smokeMaterial": "12",
+                        "sun": "48",
+                        "templates": "43",
+                        "track": "45",
+                        "vehicle": "44"
+                    }
+                }
+            ]
+        },
+        "47": {
+            "name": "Camera",
+            "translation": [
+                12.7700004,
+                9.1800003,
+                14.2700004
+            ],
+            "rotation": [
+                -0.2390999,
+                0.3695999,
+                0.0989999,
+                0.8924
+            ],
+            "components": [
+                {
+                    "type": "view",
+                    "view": {
+                        "fov": 66.0,
+                        "near": 0.1,
+                        "far": 250.0
+                    }
+                }
+            ]
+        },
+        "48": {
+            "name": "Sun",
+            "translation": [
+                0.0,
+                20.0,
+                0.0
+            ],
+            "rotation": [
+                -0.13919,
+                0.81436,
+                0.2182099,
+                0.51946
+            ],
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "type": "sun",
+                        "color": [
+                            1.0,
+                            0.93,
+                            0.8199999
+                        ],
+                        "intensity": 5.0,
+                        "shadows": true,
+                        "shadowRange": 45.0,
+                        "cascadeCount": 4
+                    }
+                }
+            ]
+        },
+        "49": {
+            "name": "Ground",
+            "translation": [
+                0.0,
+                -0.18,
+                0.0
+            ],
+            "rotation": [
+                -0.7071068,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scaling": [
+                300.0,
+                300.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "16",
+                        "mesh": "p0"
+                    }
+                }
+            ]
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "languages": {},
+    "morphTargets": {},
+    "particleEffects": {},
+    "probeVolumeScenarios": {},
+    "plugins": {
+        "@wonderlandengine/mcp-plugin": {
+            "enable": true
+        }
+    }
+}
