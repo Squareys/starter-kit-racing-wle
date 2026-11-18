@@ -1,0 +1,16 @@
+{
+  "name": "starter-kit-racing-wle",
+  "version": "0.1.0",
+  "description": "Arcade racer with a track editor for Wonderland Engine, ported from the three.js Starter Kit Racing.",
+  "type": "module",
+  "private": true,
+  "author": "Jonathan Hale <squareys@googlemail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@wonderlandengine/api": "~1.6.0",
+    "crashcat": "0.0.3"
+  },
+  "devDependencies": {
+    "@wonderlandengine/mcp-plugin": "file:../wonderland-editor-mcp"
+  }
+}
