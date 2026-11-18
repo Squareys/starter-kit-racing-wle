@@ -7,7 +7,8 @@
                 6,
                 1
             ],
-            "description": "Arcade racing on a tile-based track with a track editor, built with Wonderland Engine."
+            "description": "Arcade racing on a tile-based track with a track editor, built with Wonderland Engine.",
+            "coverImage": "https://starter-kit-racing-wle-145969.cloud.wonderland.dev/social-card.png"
         },
         "scripting": {
             "components": {
