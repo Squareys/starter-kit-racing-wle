@@ -1,0 +1,14 @@
+node_modules/
+deploy/
+.autosave/
+.editor/
+
+# The editor cache is rebuilt on demand, except bakes a windowless editor cannot
+# redo: the sky environment (and a GI probe volume bake, if one is added).
+cache/*
+!cache/starter-kit-racing/
+cache/starter-kit-racing/*
+!cache/starter-kit-racing/environment.bin
+!cache/starter-kit-racing/environment-mip-*.png
+!cache/starter-kit-racing/scenario.data.bin
+!cache/starter-kit-racing/irradiance.bin
